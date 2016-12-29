@@ -17,4 +17,17 @@
       return $result;
     }
   }
+
+/*
+* todo 조회
+*/
+  function get_view($id){
+    $sql="SELECT * FROM items WHERE id = '".$id."'";
+    $query = $this->db->query($sql);
+
+    $result = $query->row();
+// 내용 변환
+    return $result;
+  }
+
  ?>
