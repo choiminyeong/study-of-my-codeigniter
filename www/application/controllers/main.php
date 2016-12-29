@@ -10,13 +10,19 @@
       $this->load->model('todo_m');
       $this->load->helper('url');
     }
-  }
+  
 /*
 * 주소에서 메서드가 생략되었을 때 실행되는 기본 메서드
 */
-
-  public function lists(){
-    $data['list'] = $this->todo_m->get_list();
-    $this->load->view('todo/list_v', $data);
+    public funcion index(){
+      $this->lists();
+    }
+    /*
+    * todo 목록
+    */
+    public function lists(){
+      $data['list'] = $this->todo_m->get_list();
+      $this->load->view('todo/list_v', $data);
+    }
   }
  ?>
