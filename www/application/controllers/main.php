@@ -8,7 +8,7 @@
       parent::__construct();
       $this->load->database();
       $this->load->model('todo_m');
-      $this->load->helper('url');
+      $this->load->helper(array('url','date'));
     }
   
 /*
