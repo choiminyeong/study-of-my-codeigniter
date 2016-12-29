@@ -14,7 +14,7 @@
 /*
 * 주소에서 메서드가 생략되었을 때 실행되는 기본 메서드
 */
-    public funcion index(){
+    public function index(){
       $this->lists();
     }
     /*
