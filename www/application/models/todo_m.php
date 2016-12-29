@@ -1,4 +1,4 @@
-<?php if(!defined('BASEPATH')) exit('NO direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 /*
 * todo모델
 */
