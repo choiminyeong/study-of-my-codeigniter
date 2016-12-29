@@ -7,7 +7,7 @@
 	<script tyep="text/javascript" scr="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<! [endif] -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-	<title>Document</title>
+	<title>CodeIgniter</title>
 </head>
 <body>
 	<div id="main">
