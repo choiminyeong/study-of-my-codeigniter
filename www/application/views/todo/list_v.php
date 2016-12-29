@@ -48,9 +48,7 @@
 						 <tr>
 						 	<th scope="row">
 						 		<?php echo $lt->id; ?>
-						 	</th>
-
-						 	<td><a rel="external" href="/todo/index.php/main/view/<?php echo $lt->id;?>"> <?php echo $lt->content;?></a></td>
+						 	</th>						
 					 		<td><a rel="external" href="/todo/index.php/main/view/<?php echo $lt->id;?>"> <?php echo $lt->content;?></a></td>
 					 		<td><time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt->created_on));?>"><?php echo $lt->created_on;?></time></td>
 					 		<td><time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt->due_date));?>"><?php echo $lt->due_date;?></time></td>
@@ -65,9 +63,7 @@
 						</tr>
 					</tfoot>		
 				</table>	
-				<div>
-					<p></p>
-				</div>
+				<div><p></p></div>
 			</article>
 
 			<footer id="footer">
