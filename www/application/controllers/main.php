@@ -25,4 +25,17 @@
       $this->load->view('todo/list_v', $data);
     }
   }
+
+  /*
+  * todo 조회
+  */
+  function view(){
+    // todo번호에 해당하는 데이터 가져오기
+    $id = $this->url->segment(3);
+    $data['views']=$this->todo_m->get_view($id);
+
+    // view 호출
+
+    $this->load->view('todo/view_v', $data);
+  }
  ?>
