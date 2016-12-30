@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<!-- [if It Ie 9]>
-	<script tyep="text/javascript" scr="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<! [endif] -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-	<title>CodeIgniter</title>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>CodeIgniter</title>
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
 </head>
 <body>
 	<div id="main">
@@ -40,20 +42,20 @@
 							<th scope="col">시작일</th>
 							<th scope="col">종료일</th>
 						</tr>
-					</thead>		
+					</thead>
 					<tbody>
-						<?php 
+						<?php
 							foreach ($list as $lt){
 						 ?>
 						 <tr>
 						 	<th scope="row">
 						 		<?php echo $lt->id; ?>
-						 	</th>						
+						 	</th>
 					 		<td><a rel="external" href="/todo/index.php/main/view/<?php echo $lt->id;?>"> <?php echo $lt->content;?></a></td>
 					 		<td><time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt->created_on));?>"><?php echo $lt->created_on;?></time></td>
 					 		<td><time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt->due_date));?>"><?php echo $lt->due_date;?></time></td>
 						 </tr>
-						 <?php 
+						 <?php
 						}
 						  ?>
 					</tbody>
@@ -61,8 +63,8 @@
 						<tr>
 							<th colspan="4"><a href="/todo/index.php/main/write/" class="btn btn-success">쓰기</a></th>
 						</tr>
-					</tfoot>		
-				</table>	
+					</tfoot>
+				</table>
 				<div><p></p></div>
 			</article>
 
@@ -75,27 +77,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
