@@ -1,6 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 /*
 * todo 컨트롤러
+* 로컬에서 url 경로 표시 http://localhost:8080/index.php/main/lists
 */
 
   class Main extends CI_Controller{
